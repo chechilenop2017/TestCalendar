@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:layout_editor_absoluteY="81dp"
+                                             tools:context=".AcercaDe">
+
+    <Button
+            android:text="Salir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnVolverAcercaDe"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="34dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="Acerca de mi horario DUOC UC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="82dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="La aplicación permitirá al estudiante obtener la información que necesita acerca de la ubicación de sus respectivas asignaturas."
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:id="@+id/textView18"
+            android:layout_marginTop="74dp"
+            android:layout_marginBottom="70dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView17" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="39dp" app:layout_constraintBottom_toBottomOf="@+id/textView21"
+            android:layout_marginStart="39dp" android:layout_marginEnd="39dp" android:layout_marginRight="39dp"/>
+    <TextView
+            android:text="Desarrollado por:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" app:layout_constraintEnd_toEndOf="@+id/textView22"
+            app:layout_constraintStart_toStartOf="@+id/textView18" android:layout_marginLeft="110dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView18" android:layout_marginStart="110dp"
+            android:layout_marginEnd="112dp" android:layout_marginRight="112dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/textView20"
+            android:text="• Patricia Tapia  "
+            android:layout_marginTop="9dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" app:layout_constraintEnd_toStartOf="@+id/textView19"
+            android:layout_marginBottom="10dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" app:layout_constraintBottom_toBottomOf="@+id/textView21"
+            android:layout_marginStart="16dp" android:layout_marginEnd="11dp" android:layout_marginRight="11dp"/>
+    <TextView
+            android:text="• Rafael Videla "
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/textView21"
+            app:layout_constraintEnd_toStartOf="@+id/textView22" android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp" android:layout_marginBottom="31dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView23"/>
+    <TextView
+            android:text="• David Montero"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:id="@+id/textView22"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="24dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView21" app:layout_constraintBottom_toBottomOf="@+id/textView23"
+            android:layout_marginEnd="15dp" android:layout_marginRight="15dp"/>
+    <TextView
+            android:text="Alumnos de Ingenieria en Informática"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="48dp" app:layout_constraintBottom_toTopOf="@+id/btnVolverAcercaDe"/>
+</android.support.constraint.ConstraintLayout>

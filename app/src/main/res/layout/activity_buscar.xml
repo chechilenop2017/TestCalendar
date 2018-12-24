@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:layout_editor_absoluteY="81dp"
+                                             tools:context=".Buscar" android:visibility="visible">
+
+    <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_search"
+            android:id="@+id/btnBuscarSala"
+            android:visibility="visible"
+            android:layout_marginTop="38dp"
+            app:layout_constraintStart_toEndOf="@+id/etFechaDeBusqueda" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="6dp" app:layout_constraintBottom_toTopOf="@+id/cvCalendario"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"/>
+    <TextView
+            android:text="Buscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp" app:layout_constraintBaseline_toBaselineOf="@+id/etFechaDeBusqueda"
+            app:layout_constraintEnd_toStartOf="@+id/etFechaDeBusqueda" android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"/>
+    <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/cvCalendario"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/btnBuscarSala" android:layout_marginBottom="96dp"
+            app:layout_constraintEnd_toEndOf="@+id/btnBuscarSala" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="2dp" android:layout_marginRight="2dp"/>
+    <ImageButton
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            android:id="@+id/btnVolverAlMenu"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView16"/>
+    <TextView
+            android:text="Volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/btnVolverAlMenu" android:layout_marginLeft="36dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="36dp"
+            android:layout_marginBottom="12dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/etFechaDeBusqueda"
+            tools:ignore="MissingConstraints" android:visibility="visible"
+            app:layout_constraintTop_toTopOf="@+id/btnBuscarSala" app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintEnd_toStartOf="@+id/btnBuscarSala" android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"/>
+</android.support.constraint.ConstraintLayout>

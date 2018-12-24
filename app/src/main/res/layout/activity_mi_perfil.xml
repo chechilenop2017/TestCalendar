@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:layout_editor_absoluteY="81dp"
+                                             tools:context=".MiPerfil">
+
+    <TextView
+            android:text=" Nombre: Rafael Videla Zamora"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/textView7"
+            android:layout_marginTop="133dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView8" android:layout_marginBottom="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView9" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="46dp"
+            android:layout_marginStart="46dp" android:layout_marginEnd="21dp" android:layout_marginRight="21dp"/>
+    <TextView
+            android:text="Edad: 29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+            app:layout_constraintStart_toEndOf="@+id/textView7" android:layout_marginEnd="59dp"
+            android:layout_marginRight="59dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text=" Dirección : Los Cerezos 497, C° Esperanza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView7" android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp" app:layout_constraintTop_toBottomOf="@+id/textView7"
+            android:layout_marginBottom="22dp" app:layout_constraintBottom_toTopOf="@+id/textView11"/>
+    <TextView
+            android:text="Carrera: Ing. Informática"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp" android:layout_marginBottom="90dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView11" app:layout_constraintBottom_toTopOf="@+id/btnMiPerfil"/>
+    <TextView
+            android:text="Sede de estudio : Viña del Mar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" android:layout_marginBottom="17dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/textView10"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <ImageButton
+            android:layout_width="83dp"
+            android:layout_height="0dp"
+            android:id="@+id/btnMiPerfil"
+            android:background="@android:drawable/ic_menu_revert"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            android:layout_marginBottom="7dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView12" app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="Volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            app:layout_constraintStart_toStartOf="@+id/btnMiPerfil" android:layout_marginLeft="21dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="21dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnMiPerfil" android:layout_marginBottom="76dp"/>
+</android.support.constraint.ConstraintLayout>

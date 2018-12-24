@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestCalendar</string>
+    <string name="mnu_Title">Menú Principal</string>
+    <string name="log_Title">Identifíquese por favor</string>
+</resources>

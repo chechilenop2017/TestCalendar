@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:layout_editor_absoluteY="81dp"
+                                             tools:context=".Horario">
+    <TextView
+            android:text="Tu Asignacion De Horario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTituloHorario"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="36dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/llHorario" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:visibility="visible"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_previous"
+            android:id="@+id/btnVolverCalendario"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/llHorario"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/txtIconoVolver"
+            android:visibility="visible" android:tint="@color/colorPrimaryDark"/>
+    <TextView
+            android:text="Volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtIconoVolver"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnVolverCalendario" android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp" android:layout_marginBottom="41dp"
+            app:layout_constraintEnd_toEndOf="@+id/btnVolverCalendario" android:visibility="visible"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/llHorario"
+            app:layout_constraintTop_toBottomOf="@+id/txtTituloHorario" android:layout_marginBottom="37dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnVolverCalendario"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginRight="8dp">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" app:srcCompat="@drawable/horario_david"
+                android:id="@+id/imgHorario" android:visibility="visible"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+<!--<TextView
+        android:text="Horarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"/>-->
+<!--<ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_media_previous"
+        android:id="@+id/btnVolverCalendario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"/>-->
+<!--<TextView
+        android:text="Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnVolverCalendario"
+        android:layout_marginBottom="43dp"/>-->
+<!--</android.support.constraint.ConstraintLayout>-->
